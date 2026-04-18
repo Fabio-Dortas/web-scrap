@@ -15,9 +15,9 @@ try:
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
     
-    links = soup.find_all('a')
-    for link in links[:30]:  # 3. limitar para não imprimir demais
-        caixa = Panel(link.text.strip())
+        links = soup.find_all('a')
+        for link in links[:30]:  # 3. limitar para não imprimir demais
+            caixa = Panel(link.text.strip())
         print(caixa) # 4. Exibe resultados organizados em caixas
     else:
         print("Erro ao acessar a página.")

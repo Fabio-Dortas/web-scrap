@@ -18,12 +18,12 @@ try:
         links = soup.find_all('a')
         for link in links[:30]:  # 3. limitar para não imprimir demais
             caixa = Panel(link.text.strip())
-        print(caixa) # 4. Exibe resultados organizados em caixas
+            print(caixa) # 4. Exibe resultados organizados em caixas
     else:
-        print("Erro ao acessar a página.")
+        print("[red]Erro ao acessar a página. [/]")
 
 except requests.exceptions.RequestException as e:
-    print("Erro na requisição:", e) # 5. Tratamento de erros
+    print("[red]Erro na requisição: [/]", e) # 5. Tratamento de erros
 
 except Exception as e:
-    print("Erro inesperado:", e)
+    print("[red]Erro inesperado: [/]", e)

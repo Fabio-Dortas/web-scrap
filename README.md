@@ -1,5 +1,5 @@
 Web Scraping com Python
-Este projeto é um exemplo simples de web scraping utilizando as bibliotecas requests e BeautifulSoup. Ele permite que o usuário insira um link e receba como saída os primeiros 30 textos de links (<a>) encontrados na página.
+Este projeto é um exemplo simples de web scraping utilizando as bibliotecas rich, requests e BeautifulSoup. Ele permite que o usuário insira um link e receba como saída os primeiros 30 textos de links (<a>) encontrados na página.
 
 Funcionalidades
 -Recebe um link do usuário via input.
